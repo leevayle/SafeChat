@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/fonts.css" >
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="icon" href="../images/icon.png">
+
+    <title>Log in to Safechat</title>
+    <style>
+        .profile{
+            width: 90px;
+            height: 90px;
+            border-radius: 40px;
+            border: 1px solid rgb(235, 235, 235);
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 20px;
+        }
+        input{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="f-height block w400 m-auto relative b-box main ">
+
+        <div class="onboarding block m-auto ">
+            <!-- <div class="top-menu m-auto flex ">
+                <div id="back" class="top-back flex">
+                    <?xml version="1.0" ?><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.424,6.1a1.006,1.006,0,0,0-1.065.136l-6,5a1,1,0,0,0,0,1.538l6,5A1.007,1.007,0,0,0,15,18a.989.989,0,0,0,.424-.095A1,1,0,0,0,16,17V7A1,1,0,0,0,15.424,6.1ZM14,14.865,10.563,12,14,9.135Z"/></svg>
+                </div>
+                <div class="top-next ">
+
+                </div>
+            </div> -->
+
+            <div class="onboardingtitle " style="padding-top: 100px;">
+                Reset <span class="color1">Your</span><span class="color2"> Password</span><span class="color3">.</span> 
+            </div>
+            
+
+        
+
+            <div class="f-width flex inputs " style="padding-top: 50px; height: 10px;">                
+                <input id="password1" class="number m-auto" type="password" placeholder="New password" autocomplete="off">
+                
+            </div>
+            <div class="f-width flex inputs ">                
+                <input id="password" class="number m-auto" type="password" placeholder="Rpeat password" autocomplete="off">
+                
+            </div>
+
+            <div class="continuebtn flex " style="padding-top: 80px;">
+                <button id="next" class="next-btn m-auto">Reset password</button>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+  <script defer>
+
+
+    document.getElementById("password1").focus();
+
+
+
+   
+    const no = document.getElementById("password");
+    const no1 = document.getElementById("password1");
+    const btn = document.getElementById('next');
+    const nolength = no.value.length;
+    const no1length = no1.value.length;
+
+    function ChechIfSame(){
+
+        if(no.value === no1.value){
+                EnableBtn();
+
+                
+            }else if (no1.value === no.value) {
+                
+                EnableBtn();
+
+            }else{
+                DisableBtn();
+            }
+    }
+
+    function ChecKiFeMPTY(){
+
+        if(nolength >=4 && no1length >= 4){    
+
+             btn.addEventListener('click', ()=>{               
+                
+                Submit();
+                setTimeout(()=>{
+
+                    window.location.href = 'login.html';
+
+                },1500);           
+
+             });
+
+            
+            
+        }else if(no1length >=4 && nolength >=4){
+            DisableBtn();
+        }else if(nolength <=3 && no1length <=3){
+            DisableBtn();
+        }else if(nolength <=3 && no1length >=4){
+            DisableBtn();
+        }
+    }
+
+    function EnableBtn(){
+        
+        btn.style.opacity = '1';
+        btn.style.cursor = 'pointer';
+        
+
+        
+    };
+
+    function DisableBtn(){
+        btn.style.opacity = '0.4';
+        btn.style.cursor = 'not-allowed';
+    }
+    
+    function Submit(){
+        
+        const stl = btn.style.opacity;
+        
+        if(stl == '1'){
+        btn.addEventListener('click',()=>{          
+            btn.innerHTML = '<img class="f-height m-auto" src="../images/motion/1.gif">';
+            btn.style.width = '100px';
+        });
+        } 
+        
+        
+    }
+    
+    function Check(){
+        ChecKiFeMPTY();
+        ChechIfSame();
+    }
+
+        
+    // document.addEventListener('DOMContentLoaded', () => {
+    // Check();
+
+    document.getElementById('password').addEventListener('input', () => {
+        Check(); 
+    });
+
+
+    
+  </script>    
+
+    
+</body>
+</html>

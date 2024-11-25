@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/fonts.css" >
+    <link rel="stylesheet" href="../css/signup.css">
+    
+    <link rel="icon" href="../images/icon.png">
+
+    <title>Your SafeChat info</title>
+</head>
+<body>
+    
+    <div class="f-height block w400 m-auto relative b-box main ">
+
+        <div class="onboarding block m-auto ">
+            <div class="top-menu m-auto flex ">
+                <div id="back" class="top-back ">
+                    <?xml version="1.0" ?><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.424,6.1a1.006,1.006,0,0,0-1.065.136l-6,5a1,1,0,0,0,0,1.538l6,5A1.007,1.007,0,0,0,15,18a.989.989,0,0,0,.424-.095A1,1,0,0,0,16,17V7A1,1,0,0,0,15.424,6.1ZM14,14.865,10.563,12,14,9.135Z"/></svg>
+
+                </div>
+                <div style="overflow: hidden;" class="top-next ">
+                    <input type="file" id="file-input" accept="image/*">
+                    <img id="selected-image" style="display:none; width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+
+            <div class="onboardingtitle ">
+                Tell us more <span class="color1">About</span><span class="color2"> yourself</span><span class="color3">!</span> 
+            </div>
+            <div class="onboardingsub m-auto ">NOTE: Your username and profile pic are public!</div>
+
+            <div class="welcomes f-width flex m-auto ">
+                <div class="d1"></div>
+                <div class="d2"></div>
+                <div class="d2"></div>
+            </div>
+
+            <div class="f-width flex inputs ">
+                <input style="text-align: center;" id="username" class="number m-auto" type="text" placeholder="~ username" autocomplete="off">
+            </div>
+            
+
+            <div class="continuebtn flex ">
+                <button id="next" class="next-btn m-auto">Finish !</button>
+            </div>
+            
+
+        </div>
+
+        
+
+    </div>
+
+  <script defer>
+
+    document.getElementById("username").focus();
+
+    document.getElementById("back").addEventListener('click', ()=>{
+        window.location.href = 'signup.html';
+    });
+
+
+
+
+    const code = document.getElementById('country');    
+    const username = document.getElementById("username");
+    const btn = document.getElementById('next');
+
+    function EnableBtn(){
+
+        unlength = username.value.length;
+        if(unlength >= 3){
+            btn.style.opacity = '1';
+            btn.style.cursor = 'pointer';
+
+            Submit();     
+
+
+             btn.addEventListener('click', ()=>{               
+                const un = username.value;
+                localStorage.setItem('u_n', btoa(un));
+                localStorage.setItem('pass', 'n');
+
+                setTimeout(()=>{
+
+                    window.location.href = "../main/chat.html";
+                    // window.location.href = "login.html";
+
+                },4500);           
+
+             });
+
+            
+            
+        }else if(unlength <=2){
+            btn.style.opacity = '0.4';
+            btn.style.cursor = 'not-allowed';
+        }
+    };
+
+
+
+    function Submit(){
+        const stl = btn.style.opacity;
+        if(stl == '1'){
+        btn.addEventListener('click',()=>{   
+                     
+            btn.innerHTML = '<img class="f-height m-auto" src="../images/motion/2.gif">';
+            btn.style.width = '150px';
+        });
+        } 
+        
+        
+    }
+    
+
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+    EnableBtn(); // Call EnableBtn once the content has fully loaded
+
+    document.getElementById('username').addEventListener('input', () => {
+        EnableBtn(); // Call EnableBtn on input
+    });
+});
+  </script>    
+
+<script defer>
+    const fileInput = document.getElementById('file-input');
+    const imageContainer = document.getElementById('image-container');
+    const selectedImage = document.getElementById('selected-image');
+  
+    fileInput.addEventListener('change', function () {
+      const file = fileInput.files[0]; // Get the selected file
+      if (file) {
+        const reader = new FileReader();
+  
+        // When the file is loaded, set it as the image source
+        reader.onload = function (e) {
+          selectedImage.src = e.target.result; // Set the image source to the file
+          selectedImage.style.display = 'block'; // Make the image visible
+        };
+  
+        reader.readAsDataURL(file); // Convert the file to a data URL
+      }
+    });
+
+  </script>
+    
+</body>
+</html>

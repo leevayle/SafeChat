@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/fonts.css" >
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="icon" href="../images/icon.png">
+
+    <title>Onboarding Safechat</title>
+</head>
+<body>
+    
+    <div class="f-height block w400 m-auto relative b-box main ">
+
+        <div class="onboarding block m-auto ">
+            <div class="top-menu m-auto flex ">
+                <div id="back" class="top-back flex">
+                    <?xml version="1.0" ?><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.424,6.1a1.006,1.006,0,0,0-1.065.136l-6,5a1,1,0,0,0,0,1.538l6,5A1.007,1.007,0,0,0,15,18a.989.989,0,0,0,.424-.095A1,1,0,0,0,16,17V7A1,1,0,0,0,15.424,6.1ZM14,14.865,10.563,12,14,9.135Z"/></svg>
+                </div>
+                <!-- <div class="top-next ">
+
+                </div> -->
+            </div>
+
+            <div class="onboardingtitle ">
+                Let's get you <span class="color1">On</span><span class="color2"> board</span><span class="color3">!</span> 
+            </div>
+            <div class="onboardingsub m-auto ">Kindly provide your phone number so we can onboard you</div>
+
+            <div class="welcomes f-width flex m-auto ">
+                <div class="d1"></div>
+                <div class="d2"></div>
+                <div class="d3"></div>
+            </div>
+
+            <div class="f-width flex inputs ">
+                <select id="code" class="country " >
+                    <option value="+1" >+1</option>
+                    <option value="+44">+44</option> 
+                    <option value="+254" selected>+254</option>
+                    <option value="+256">+256</option>  
+                     
+                </select>
+                <input id="number" class="number " type="number" placeholder="Your phone number" autocomplete="off">
+            </div>
+
+            <div class="continuebtn flex ">
+                <button id="next" class="next-btn m-auto">Sign me Up!</button>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+  <script defer>
+    setTimeout(()=>{
+        
+        console.log('Your digits! change the country code if not correct');
+    },900);
+
+    document.getElementById("number").focus();
+
+    document.getElementById("back").addEventListener('click', ()=>{
+        window.location.href = '../welcome.html';
+    });
+
+
+
+
+    const code = document.getElementById('country');    
+    const no = document.getElementById("number");
+    const btn = document.getElementById('next');
+
+    function EnableBtn(){
+        nolength = no.value.length;
+        if(nolength >= 9){
+            btn.style.opacity = '1';
+            btn.style.cursor = 'pointer';
+
+            Submit();     
+
+
+             btn.addEventListener('click', ()=>{               
+                
+
+                setTimeout(()=>{
+
+                    window.location.href = 'profile.html';
+
+                },1500);           
+
+             });
+
+            
+            
+        }else if(nolength <=8){
+            btn.style.opacity = '0.4';
+            btn.style.cursor = 'not-allowed';
+        }
+    };
+    
+
+
+
+    function Submit(){
+        
+        const stl = btn.style.opacity;
+        const code = document.getElementById('code').value;
+        
+        if(stl == '1'){
+        btn.addEventListener('click',()=>{     
+            const phn = code+no.value;
+
+            localStorage.setItem('id_phn', btoa(phn));       
+            btn.innerHTML = '<img class="f-height m-auto" src="../images/motion/1.gif">';
+            btn.style.width = '100px';
+        });
+        } 
+        
+        
+    }
+    
+
+
+        
+    document.addEventListener('DOMContentLoaded', () => {
+    EnableBtn(); // Trigger EnableBtn when the page content is loaded
+
+    document.getElementById('number').addEventListener('input', () => {
+        EnableBtn(); // Trigger EnableBtn on input
+    });
+});
+
+    
+  </script>    
+    
+</body>
+</html>

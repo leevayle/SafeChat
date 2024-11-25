@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <title>Welcome to safechat</title>
+</head>
+<body>
+    <div id="modal" class="absolute flex modalcont">
+       <div class="modal m-auto relative">
+        <button id="b-button" class="flex " ><?xml version="1.0" ?><svg class="f-height m-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.424,6.1a1.006,1.006,0,0,0-1.065.136l-6,5a1,1,0,0,0,0,1.538l6,5A1.007,1.007,0,0,0,15,18a.989.989,0,0,0,.424-.095A1,1,0,0,0,16,17V7A1,1,0,0,0,15.424,6.1ZM14,14.865,10.563,12,14,9.135Z"/></svg></button>         
+        <div  class="m-auto safechat-title " id="rcode">
+            Refferal<span class="color2"> Code</span><span class="dot">.</span>
+        </div> 
+        <input id="ref" class="flex m-auto" type="text" placeholder="Enter code here" autocomplete="off">
+        <img id="m-img" src="images/motion/2.gif">
+       </div>
+       
+    </div>
+    
+    <div class="full flex ">
+
+        <div class="welcome m-auto relative">
+            
+            <div class="flex logo">
+                <img class="f-height m-auto" src="images/favicon.png">
+            </div>
+
+            <div class="m-auto safechat-title ">
+                Safe<span class="color2">Chat</span><span class="dot">.</span>
+            </div> 
+            <div class="welcomes f-width flex m-auto ">
+                <div class="d1"></div>
+                <div class="d2"></div>
+                <div class="d3"></div>
+            </div>
+            
+            <div class="btnholder flex m-auto">
+                <button id="continue" class="inbtn m-auto">Continue</button>
+            </div>
+            
+            <div id="referral" class="referral m-auto">
+                Refferal code?
+            </div>
+
+            <!-- <div class="index-footer m-auto  ">
+                Made by <a href="https://leenx.com" target="_blank"><span class="footer-span">leenx solutions</span> </a> 2024.
+            </div> -->
+
+        </div>
+        
+
+    </div>
+
+    
+    
+
+<script defer>   
+
+    setTimeout(()=>{
+        
+        console.log('Click continue!');
+    },900);
+   const btn = document.getElementById("continue");
+   btn.addEventListener('click', ()=>{
+        
+
+    setTimeout(() => {
+        console.log('Hang tight! just a sec...');
+        btn.style.background = 'transparent';
+        btn.innerHTML = '<img class="f-height" src="images/motion/1.gif">';
+    }, 100);
+    
+    
+    setTimeout(()=>{
+        
+        window.location.href = "auth/signup.html";
+    },2600);
+
+
+        
+    });
+    
+
+
+
+
+
+    //process the input on referral code 
+    
+    function Hide(){
+        document.getElementById('m-img').style.opacity = '0';
+        document.getElementById('modal').style.display = 'none';
+        document.getElementById('ref').value = '';
+    }
+    function Show(){
+        document.getElementById('modal').style.display = 'block';
+        document.getElementById('ref').focus();
+    }
+   
+    document.getElementById('ref').addEventListener('input',()=>{
+        //console.log('input detect');
+        const cd = document.getElementById('ref').value;
+        const cdl = cd.length;
+        if(cdl>=15){
+
+        // Server to handle referral code
+
+
+
+        // UI upate
+        document.getElementById('m-img').style.opacity = '1';
+        document.getElementById('ref').blur();
+        
+        setTimeout(()=>{
+            
+            Hide();
+            
+        },2000);
+
+
+        }
+    });
+
+    document.getElementById('referral').addEventListener('click',()=>{
+        Show();
+    })
+    document.getElementById('b-button').addEventListener('click',()=>{
+        Hide();
+    })
+    
+
+
+</script>
+</body>
+<!-- <script defer src="js/.js"></script> -->
+</html>

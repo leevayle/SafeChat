@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <title>Welcome to safechat</title>
+</head>
+<body>
+    <div id="background" class="background flex relative f-height f-width">
+        <div id="bg-logo" class="animation block m-auto ">
+            <div class="flex logo">
+                <img class="f-height m-auto" src="images/favicon.png">
+            </div>
+            <div class="m-auto safechat-title ">
+                Safe<span class="color2">Chat</span><span class="dot">.</span>
+            </div>
+            <div class="flex spinner m-auto ">
+                <img id="spinner" class="m-auto f-height" src="images/motion/2.gif">
+            </div> 
+        </div>
+    </div>
+
+    
+    
+<script defer>
+    const bg = document.getElementById('background');
+    const logo = document.getElementById('bg-logo');
+
+    function Animate(){
+        logo.style.padding = '0px';
+        logo.style.opacity = '1';
+    }
+    setTimeout(()=>{
+        Animate();
+    },10)
+    setTimeout(() => {
+        document.getElementById('spinner').style.visibility = 'visible';
+    }, 2200);
+
+
+    window.onload = function () {
+   
+   const phoneId = localStorage.getItem('id_phn');
+   
+   if (phoneId) {
+       
+       const pass = localStorage.getItem('pass');
+       
+       if (pass === 'y') {
+           
+           
+           setTimeout(() => {
+
+            window.location.href = "./auth/login.html";
+
+            }, 3500);
+
+
+       } else if (pass === 'n') {
+           
+        setTimeout(() => {
+            window.location.href = 'main/chat.html';      
+
+        }, 3900);
+           
+       } else {
+           
+           console.log("Unexpected 'pass' value should be y or n");
+       }
+   } else {
+       
+       
+       setTimeout(() => {
+            console.log("New user detected");    
+        }, 1000);
+
+       setTimeout(() => {
+            console.log("Hold on, let's get you registered!");    
+        }, 3000);
+
+       setTimeout(() => {
+        window.location = 'welcome.html';     
+        }, 7500);
+        
+       
+   }
+};
+    
+</script>
+
+
+</body>
+
+</html>

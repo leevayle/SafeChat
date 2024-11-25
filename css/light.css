@@ -1,0 +1,161 @@
+:root {
+    --bg: #ebebeb;
+    --bg2: #e0e0e0;
+    --bg-transparent: #ebebeb00;
+    --body: #d1d1d1;
+    --accent1: #e37440;
+    --accent2: #b334b9;
+    --accent3: #6389EB;
+    --border1: #BEBEBE;
+    --border2: #CCCCCC;
+    --input-font: #727272;
+    --status-ok: #009C00;
+    --active-text: #660085;
+    --text-hover: #f5f5f5;
+    --white: #ffffff;
+    --black: #000000;
+    --text-name: #505050;
+    --text-content: #546A75;
+    --text-time: #838383;
+}
+
+*{
+    transition: all 0.2s ease-in-out;
+}
+
+body, html{
+    background-color: var(--body);
+    transition: 0.5s ease-in-out;
+}
+
+.chats, .messages{
+    background-color: var(--bg);
+    transition: 0.5S ease-in-out;
+}
+.chats-header{
+    border-bottom: 1px solid var(--border1);
+}
+.h2{
+    color: var(--accent1);
+}
+.color1{
+    color: var(--accent2);
+}
+.color2{
+    color: var(--accent3);
+}
+
+.top-menu{
+    background-color: var(--border2);
+    box-shadow: var(--border2) 0px 15px 20px;
+}
+
+.t-m-icons:hover{
+    background-color: var(--border1);
+}
+
+
+
+.search-section{
+    border: 1px solid var(--border1);
+}
+.s1 input{
+    color: var(--input-font);
+}
+.s2{
+    border-left: 1px solid var(--border1);
+}
+.st1{
+    background: linear-gradient(to right, var(--bg), var(--bg-transparent));
+    transition: 0.5s ease-in-out;
+}
+.st3{
+    background: linear-gradient(to left, var(--bg), var(--bg-transparent));
+    transition: 0.5s ease-in-out;
+}
+#ring1, #ring2{
+    background: var(--status-ok);
+}
+
+.filter{
+    color: var(--input-font);
+    background-color: var(--bg2);
+    transition: all 0.2s ease-in-out;
+}
+.active-filter{
+    background-color: var(--body);
+    color: var(--black);
+    transition: all 0.2s ease-in-out;
+}
+
+
+.text{
+    border-bottom: 1px solid var(--border2);
+ }
+ .text:hover{
+    background-color: var(--text-hover);
+}
+.t-active{
+    background-color: var(--accent2);
+}
+.t-name{
+    color: var(--text-name);
+}
+.t-message{
+    color: var(--text-content);
+}
+.t-time1{
+    color: var(--text-time);
+}
+.t-notification{
+    color: var(--white);
+}
+.online-status{
+    background-color: var(--status-ok);
+    border: 2px solid var(--bg);
+}
+.offline-status{
+    background-color: var(--bg-transparent);
+    border: 2px solid var(--bg-transparent);
+}
+.b{
+    border-top: 1px solid var(--border1);
+}
+.bottom-svg{
+    fill: var(--accent2);
+    transition: all 0.2s ease-in-out;
+}
+.bottom-divs:hover .bottom-svg{
+    fill: var(--accent1);
+}
+.search-svg{
+    fill: var(--border1);
+}
+.top-svg{
+    fill: var(--accent3);
+    transition: all 0.1s ease;
+}
+/* .top-icon:hover .top-svg{
+    fill: var(--accent2);
+} */
+.top-icon:hover{
+    background-color: var(--body);
+}
+.selector{
+    background-color: var(--black);
+    box-shadow: var(--bg-transparent) 0px 20px 25px -5px, var(--black) 0px 0px 25px 5px;
+    
+ }
+.other{
+    background-color: var(--bg2);
+    transition: 0.5s ease-in-out;
+}
+
+
+@media screen and (max-width:650px) {
+    
+    body, html{
+     background-color: var(--bg);
+    }
+ 
+ }

@@ -1,0 +1,118 @@
+
+body,html{
+    margin: 0;
+    height: 100%;
+    max-height: 100%;
+    min-height: 99%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 99%;
+    overflow: hidden;
+}
+
+
+.icon{
+    width: 100%;
+    height: 100%;
+}
+.f-width{
+    width: 100%;
+}
+.f-height{
+    height: 100%;
+}
+.m-auto{
+    margin: auto;
+}
+.flex{
+    display: flex;
+}
+.block{
+    display: block;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
+.w400{
+    width: 500px;
+}
+.b-box{
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* colors */
+.red{
+    border: 1px solid red;
+}
+.green{
+    border: 1px solid green;
+}
+.grey{
+    border: 1px solid grey;
+}
+.brown{
+    border: 1px solid rgb(218, 116, 0);
+}
+
+.modalcont{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.548);
+    display: none;
+    padding-top: 100px;
+    transition: all 0.2s ease-in-out;
+}
+.modal{
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 25px;
+    background-color: rgb(247, 247, 247);
+    padding-top: 5px;
+}
+#rcode{
+    font-size: 20px;
+}
+.modal input{
+    height: 40px;
+    width: 80%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'gothic',sans-serif;
+    font-size: 15px;
+    font-weight: BOLD;
+    color: blueviolet;
+}
+.modal input:focus{
+    outline: none;
+}
+.modal img{
+    transition: all 0.2s ease;
+    width: 100px;
+    margin: auto;
+    display: flex;
+    
+}
+#m-img{
+    opacity: 0;
+}
+.modalcont button{
+    height: 40px;
+    width: 70px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-left: 5px;
+}

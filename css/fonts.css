@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('../fonts/Poppins-Bold.ttf') format('opentype'),
+
+  }
+
+  @font-face {
+    font-family: 'poppins';
+    src: url('../fonts/Poppins-Medium.ttf') format('opentype'),
+
+  }  
+
+  @font-face {
+    font-family: 'gothic';
+    src: url('../fonts/GOTHIC.TTF') format('opentype'),
+
+  }
