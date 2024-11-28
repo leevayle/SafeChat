@@ -4,8 +4,11 @@
     --bg-transparent: #ebebeb00;
     --body: #d1d1d1;
     --accent1: #e37440;
+    --accent1aa:#df9370;
     --accent2: #b334b9;
+    --accent2aa: #ae74b1;
     --accent3: #6389EB;
+    --accent3aa: #638aeb9c;
     --border1: #BEBEBE;
     --border2: #CCCCCC;
     --input-font: #727272;
@@ -46,12 +49,16 @@ body, html{
 }
 
 .top-menu{
-    background-color: var(--border2);
+    background-color: var(--bg);
     box-shadow: var(--border2) 0px 15px 20px;
 }
 
 .t-m-icons:hover{
-    background-color: var(--border1);
+    /* background-color: var(--bg2); */
+    transition: all 0.3s ease-in-out;
+}
+.t-m-icons:hover .top-svg{
+    fill: var(--accent1);
 }
 
 
@@ -146,6 +153,62 @@ body, html{
     box-shadow: var(--bg-transparent) 0px 20px 25px -5px, var(--black) 0px 0px 25px 5px;
     
  }
+ .message-top{
+    box-shadow: var(--body) 0px 5px 25px;
+ }
+ .message-cont::-webkit-scrollbar-thumb {
+    background-color: var(--border1);
+  }
+  
+  .message-cont::-webkit-scrollbar-track {
+    background-color: var(--bg); /* Adjust the track color */
+  }
+
+ .texts{
+    border: 1px solid var(--border2);
+    /* box-shadow: var(--body) 0px 4px 6px, var(--bg) 0px 5px 20px; */
+ }
+ .text-day{
+    background-color: var(--body);
+    color: var(--text-time);
+ }
+ .aa{
+    background-color: var(--accent2);
+ }
+ .bb{
+    background-color: var(--accent3);
+ }
+
+ .text-message{
+    color: var(--white);
+ }
+ .sent{
+    color: var(--border2);
+ }
+ .reveived{
+    color: var(--accent3);
+ }
+
+
+.message-bottom{
+    box-shadow: var(--body) 0px 7px 29px 0px;
+}
+.message-form{
+    border: 1px solid var(--border1);
+}
+.message-input input{color: var(--text-time);}
+
+.message-send{
+    background-color: var(--accent3);
+}
+.bottom-m-svg{
+    fill: var(--accent2);
+}
+
+.bottom-separator{border-left: 1px solid var(--border1);}
+
+
+
 .other{
     background-color: var(--bg2);
     transition: 0.5s ease-in-out;

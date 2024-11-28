@@ -46,7 +46,7 @@
 
             <div class="welcomes f-width flex m-auto ">
                 <div class="profile m-auto relative" style="overflow: hidden;">
-                    <img id="avatar" class="icon" src="../images/profiles/default.jpg" >
+                    <img id="avatar" class="icon" src="" >
                 </div>
             </div>
             <div style="text-align: center; padding-top: 30px; color: blueviolet;">~ <span id="username" style="font-family: 'poppins',sans-serif;">Username</span></div>
@@ -66,6 +66,16 @@
     </div>
 
   <script defer>
+
+    const prof = document.getElementById('avatar');
+    const pv = localStorage.getItem('profile');
+
+    if(pv){
+        prof.src = '../images/profiles/'+pv;
+    }else{
+        prof.src = '../images/profiles/default.jpg';
+    }
+
 
 const username = localStorage.getItem('u_n');
 if(username){

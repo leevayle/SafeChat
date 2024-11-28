@@ -7,6 +7,7 @@
     --accent1: #e37440;
     --accent2: #9C31A1;
     --accent3: #6389EB;
+    --accent3b: #638aebce;
     --border1: #3A3A3A;
     --border2: rgb(43, 43, 43);  
     --input-font: #B6B6B6;
@@ -51,7 +52,11 @@ body, html{
     box-shadow: var(--border2) 0px 15px 20px;
 }
 .t-m-icons:hover{
-    background-color: var(--border1);
+    /* background-color: var(--bg2); */
+    transition: all 0.3s ease-in-out;
+}
+.t-m-icons:hover .top-svg{
+    fill: var(--accent1);
 }
 
 
@@ -148,6 +153,82 @@ body, html{
     box-shadow: var(--bg-transparent) 0px 20px 25px -5px, var(--accent3) 0px 0px 15px 5px;
     
  }
+ .message-top{
+    box-shadow: var(--body) 0px 5px 25px;
+ }
+ .message-bottom{
+    box-shadow: var(--body) 0px 7px 29px 0px;
+}
+.message-form{
+    border: 1px solid var(--border1);
+}
+.message-input input{color: var(--text-time);}
+
+.message-send{
+    background-color: var(--accent1);
+}
+
+.bottom-m-svg{
+    fill: var(--accent3);
+}
+
+.bottom-separator{border-left: 1px solid var(--border1);}
+
+.message-top{
+    box-shadow: var(--body) 0px 5px 25px;
+ }
+ .message-cont::-webkit-scrollbar-thumb {
+    background-color: var(--border1);
+  }
+  
+  .message-cont::-webkit-scrollbar-track {
+    background-color: var(--bg); /* Adjust the track color */
+  }
+
+ .text-day{
+    background-color: var(--body);
+    color: var(--text-time);
+ }
+ .aa{
+    background-color: var(--accent2);
+ }
+ .bb{
+    background-color: var(--accent3b);
+ }
+
+ .text-message{
+    color: var(--white);
+ }
+ .sent{
+    color: var(--input-font);
+ }
+ .reveived{
+    color: var(--accent3);
+ }
+
+ .message-top{
+    box-shadow: var(--body) 0px 5px 25px;
+ }
+
+.message-bottom{
+    box-shadow: var(--body) 0px 7px 29px 0px;
+}
+.message-form{
+    border: 1px solid var(--border1);
+}
+.message-input input{color: var(--text-time);}
+
+.message-send{
+    background-color: var(--accent3);
+}
+.bottom-m-svg{
+    fill: var(--accent2);
+}
+
+.bottom-separator{border-left: 1px solid var(--border1);}
+
+
+
 .other{
     background-color: var(--bg2);
     transition: 0.5s ease-in-out;

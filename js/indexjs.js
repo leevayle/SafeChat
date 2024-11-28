@@ -1,24 +1,27 @@
 
 // Get user theme for rendering
-document.addEventListener('DOMContentLoaded', ()=>{
-    function getUserTheme() {
+document.addEventListener('DOMContentLoaded', () => {
 
-        const theme = document.getElementById('theme');
-    
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            theme.href = `../css/light.css`;
-            console.log('Theme prefrence : dark');
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-            theme.href = `../css/light.css`;
-            console.log('Theme prefrence : light');
-        } else {
-            theme.href = `../css/light.css`;
-            console.log('Theme prefrence : No pref (will set to light)');
-        }
-      };
+    theme.href = `../css/light.css`;
 
-      getUserTheme();
+    // function getUserTheme() {
+    //     const theme = document.getElementById('theme');
+
+    //     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    //         theme.href = `../css/dark.css`;
+    //         console.log('Theme preference: dark');
+    //     } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+    //         theme.href = `../css/light.css`;
+    //         console.log('Theme preference: light');
+    //     } else {
+    //         theme.href = `../css/light.css`; // Default to light if no preference is set.
+    //         console.log('Theme preference: No preference (defaulting to light)');
+    //     }
+    // }
+
+    // getUserTheme();
 });
+
 
 
 
@@ -35,18 +38,13 @@ document.getElementById('d').addEventListener('click', ()=>{
 });
 
 
-//this code just refused to work. i have no idea why!
 document.getElementById('themebtn').addEventListener('click', ()=>{
-    const theme = document.getElementById('theme');
-    // theme.href = `../css/dark.css`; 
-    // console.log('Theme -> Dark');
+    const theme = document.getElementById('theme'); 
 
-    if(theme.href === '../dark.css'){
-        theme.href = '../css/light.css';
-    }else{
-        theme.href = '../css/dark.css';
-    }
-    // theme.href = "../dark.css" ? "../css/dark.css" : "../css/light.css" ;
+     theme.href = theme.href.includes("dark.css") 
+    ? "../css/light.css" 
+    : "../css/dark.css";
+
 });
 
 
@@ -114,30 +112,50 @@ filters.forEach(filter => {
 });
  
 
-
+function HideMenu (){
+    const pop =  document.getElementById('top-menu');
+    pop.style.height = '10px';
+        
+        setTimeout(()=>{
+            pop.style.display = 'none';
+        },100);
+}
 document.getElementById('menu').addEventListener('click', () => {
     const pop =  document.getElementById('top-menu');
     
-    if(pop.style.display === 'flex'){
-        pop.style.display = 'none';
-        pop.style.opacity = '0.1';
-        pop.style.transition = 'all 0.3s ease-in-out';
+    if(pop.style.display === 'flex'){        
+        HideMenu();
+       
     }else{
+
         pop.style.display = 'flex';
-        pop.style.opacity = '0.1';
-        pop.style.opacity = '1';
-        pop.style.transition = 'all 0.3s ease-in-out';
+       
+        setTimeout(()=>{
+            pop.style.height = '130px';
+        },0.1);
 
     }
 });
 
 document.getElementById('home').addEventListener('click', () => {
-    const pop =  document.getElementById('top-menu');
     
-        pop.style.display = 'none';
-        pop.style.opacity = '0.1';
-        pop.style.transition = 'all 0.3s ease-in-out';
-    
+        HideMenu();    
 });
+
+
+// Allow send aftre one character in the input
+    const send = document.getElementById('send');
+    const msg = document.getElementById('msg');
+
+    msg.addEventListener('input', ()=>{
+        if(msg.value.length >=1){
+            send.style.opacity = '1';
+            send.style.cursor = 'pointer';
+        }else{
+            send.style.opacity = '0.5';
+            send.style.cursor = 'not-allowed';
+        }
+    
+    });
 
 

@@ -15,3 +15,9 @@
     src: url('../fonts/GOTHIC.TTF') format('opentype'),
 
   }
+
+  @font-face {
+    font-family: 'tw';
+    src: url('../fonts/TCM_____.TTF') format('opentype'),
+
+  }

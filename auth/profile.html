@@ -54,101 +54,134 @@
 
     </div>
 
-  <script defer>
+    <script defer>
+        const fileInput = document.getElementById('file-input');
+        const selectedImage = document.getElementById('selected-image');
+        const btn = document.getElementById('next');
+        const username = document.getElementById('username');
 
-    document.getElementById("username").focus();
-
-    document.getElementById("back").addEventListener('click', ()=>{
-        window.location.href = 'signup.html';
-    });
-
-
-
-
-    const code = document.getElementById('country');    
-    const username = document.getElementById("username");
-    const btn = document.getElementById('next');
-
-    function EnableBtn(){
-
-        unlength = username.value.length;
-        if(unlength >= 3){
-            btn.style.opacity = '1';
-            btn.style.cursor = 'pointer';
-
-            Submit();     
-
-
-             btn.addEventListener('click', ()=>{               
-                const un = username.value;
-                localStorage.setItem('u_n', btoa(un));
-                localStorage.setItem('pass', 'n');
-
-                setTimeout(()=>{
-
-                    window.location.href = "../main/chat.html";
-                    // window.location.href = "login.html";
-
-                },4500);           
-
-             });
-
-            
-            
-        }else if(unlength <=2){
-            btn.style.opacity = '0.4';
-            btn.style.cursor = 'not-allowed';
-        }
-    };
-
-
-
-    function Submit(){
-        const stl = btn.style.opacity;
-        if(stl == '1'){
-        btn.addEventListener('click',()=>{   
-                     
-            btn.innerHTML = '<img class="f-height m-auto" src="../images/motion/2.gif">';
-            btn.style.width = '150px';
+        username.focus(); // important
+      
+        fileInput.addEventListener('change', function () {
+            const file = fileInput.files[0]; // Get the selected file
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    selectedImage.src = e.target.result;
+                    selectedImage.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
         });
-        } 
-        
-        
-    }
+
+        function AddNewUser(){
+
+            const id_phn = localStorage.getItem('id_phn');
+            const u_n = username.value;
+            const dir = localStorage.getItem('profile');
+            
+
+
+            fetch('/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                id_phn: `${id_phn}`,
+                u_n: `${u_n}`,
+                key: '',
+                theme: '1',
+                pass: 'n',
+            }),
+            })
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.success) {
+                console.log('Signup success!:', data.message);
+                } else {
+                console.error('Registration failed :(', data.message);
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+
+        }
     
+        function Submit() {
+            if (btn.style.opacity === '1') {
+                // Change button state
+                btn.innerHTML = '<img class="f-height m-auto" src="../images/motion/2.gif">';
+                btn.style.width = '150px';
+    
+                const file = fileInput.files[0];
+                const user = username.value;
 
+                localStorage.setItem('u_n',btoa(user)); //important, do not leave it out
+                localStorage.setItem('pass', 'n'); // also important
+                
 
+                const id_phn = localStorage.getItem('id_phn');  // Get id_phn from localStorage
+    
+                const formData = new FormData();
+                formData.append('id_phn', id_phn);
+    
+                if (file) {
+                    formData.append('profilePic', file);
+                }
+                
 
-    document.addEventListener('DOMContentLoaded', () => {
-    EnableBtn(); // Call EnableBtn once the content has fully loaded
+                // Send the data to the server using fetch
+                fetch('/upload.js', {
+                    method: 'POST',
+                    body: formData,
+                })
+                .then(response => response.json())
+                .then(data => {
 
-    document.getElementById('username').addEventListener('input', () => {
-        EnableBtn(); // Call EnableBtn on input
-    });
-});
-  </script>    
+                    localStorage.setItem('profile', data.filename);
+                    console.log('Upload success:', data);
+                    // Redirect to chat page after successful upload
 
-<script defer>
-    const fileInput = document.getElementById('file-input');
-    const imageContainer = document.getElementById('image-container');
-    const selectedImage = document.getElementById('selected-image');
-  
-    fileInput.addEventListener('change', function () {
-      const file = fileInput.files[0]; // Get the selected file
-      if (file) {
-        const reader = new FileReader();
-  
-        // When the file is loaded, set it as the image source
-        reader.onload = function (e) {
-          selectedImage.src = e.target.result; // Set the image source to the file
-          selectedImage.style.display = 'block'; // Make the image visible
-        };
-  
-        reader.readAsDataURL(file); // Convert the file to a data URL
-      }
-    });
+                    setTimeout(() => {
+                        window.location.href = "../main/chat.html";
+                    }, 2500);
+                    
+                })
+                .catch(error => {
+                    localStorage.setItem('profile', ''); //important
+                    console.error('Error uploading file:', error);
 
-  </script>
+                    setTimeout(() => {
+                        window.location.href = "../main/chat.html";
+                    }, 2500);
+                });
+
+                AddNewUser();
+            }
+        }
+    
+        // Enable button when username is valid
+        function EnableBtn() {
+            const unlength = username.value.length;
+            if (unlength >= 3) {
+                btn.style.opacity = '1';
+                btn.style.cursor = 'pointer';
+                btn.addEventListener('click', Submit);
+            } else {
+                btn.style.opacity = '0.4';
+                btn.style.cursor = 'not-allowed';
+            }
+        }
+    
+        // Check username validity when typing
+        document.addEventListener('DOMContentLoaded', () => {
+            EnableBtn();
+            document.getElementById('username').addEventListener('input', EnableBtn);
+        });
+    </script>
+    
     
 </body>
 </html>
