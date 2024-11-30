@@ -1,5 +1,3 @@
-// upload.js
-
 const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
@@ -7,9 +5,10 @@ const path = require('path');
 // Set up multer for handling file uploads
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    const uploadDir = path.join(__dirname, '..', 'images', 'profiles');
+    const uploadDir = path.join(__dirname,"..", '..', 'images', 'profiles');
+    // Ensure the directory exists, create it if not
     if (!fs.existsSync(uploadDir)) {
-      fs.mkdirSync(uploadDir); // Create directory if it doesn't exist
+      fs.mkdirSync(uploadDir, { recursive: true }); // Create directory and parent directories if needed
     }
     cb(null, uploadDir);
   },

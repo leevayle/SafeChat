@@ -3,12 +3,14 @@ const http = require('http');
 const path = require('path');
 const WebSocket = require('ws');
 const favicon = require('serve-favicon');
-const handleFileUpload = require('./upload');
-const setupRegistrationApi = require('./signup'); // Import the registration API setup
+const handleFileUpload = require('./scripts/upload');
+const setupRegistrationApi = require('./scripts/signup');
+const { saveMessage } = require('./scripts/messageService');
 
 const app = express();
 
 app.use(favicon(path.join(__dirname, '../images/icon.png')));
+
 
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
@@ -16,6 +18,7 @@ const wss = new WebSocket.Server({ server });
 // Map to store connected clients with their phone number as key
 const connectedClients = new Map();
 
+// saving a message
 
 
 
@@ -25,29 +28,64 @@ wss.on('connection', (ws) => {
             const messageData = JSON.parse(message.toString('utf-8'));
             const id = messageData.id;
             const u = atob(messageData.username);
+            
 
             connectedClients.set(id, { ws, u });
             console.log('');
             console.log(
                 '\x1b[32m%s\x1b[0m \x1b[34m%s\x1b[0m',
-                '■■■■■■■■>',  // Green
+                '■■■■■■■■►',  // Green
                 "~ " +u                // Blue (username stored in variable `u`)
               );
               
         }
-
-        function routeMessage(messageData) {
+        async function SaveMessage(messageData) {
+            const id = messageData.from;
+            const messagePayload = {
+                messageid: messageData.messageid,
+                to: messageData.to,
+                from: messageData.from,
+                message: Buffer.from(messageData.message, 'base64').toString('utf-8'),
+                timestamp: messageData.timestamp,
+                status: messageData.status,
+                statustime: messageData.statustime
+            };
+            // console.log(messageData.id);
+        
             try {
-                const recipientId = messageData.to; 
-                const recipientClient = connectedClients.get(recipientId);
+                await saveMessage(id, messagePayload); // Ensure saving is complete
+                // console.log(
+                //     '\x1b[36m%s\x1b[0m \x1b[35m%s\x1b[0m',
+                //     '■■■ Saved: ',
+                //     `From: ${messagePayload.from} | To: ${messagePayload.to}`
+                // );
+            } catch (err) {
+                console.error('Error saving message:', err);
+            }
+        }
+        
+        
 
+        async function routeMessage(messageData) {
+            try {
+                const recipientId = messageData.to;
+                const recipientClient = connectedClients.get(recipientId);
+        
+                // Save the message regardless of recipient status
+                await SaveMessage(messageData);
+        
                 if (recipientClient) {
-                    console.log(`${recipientId} √√`);
+                    console.log(`${messageData.messageid} √`);
                     recipientClient.ws.send(
                         JSON.stringify({
                             from: messageData.from,
                             message: Buffer.from(messageData.message, 'base64').toString('utf-8'),
                             timestamp: messageData.timestamp,
+                            u_n: messageData.u_n,
+                            messageid: messageData.messageid,
+                            profilepath: messageData.path,
+                            statustime:messageData.statustime,
+                            to: messageData.to
                         })
                     );
                 } else {
@@ -57,6 +95,7 @@ wss.on('connection', (ws) => {
                 console.error('Error in routing message:', err);
             }
         }
+        
 
         try {
             if (!message) {
@@ -74,6 +113,7 @@ wss.on('connection', (ws) => {
                 console.log('');
                 console.log('■■■■ ' +"~ "+ decodedUsername);                
                 console.log( decodedMessage);
+                console.log(`ID : ` + messageData.messageid);
 
                 // Correctly call `routeMessage` with `messageData`
                 routeMessage(messageData);
@@ -96,7 +136,7 @@ wss.on('connection', (ws) => {
             console.log('');
             console.log(
                 '\x1b[31m%s\x1b[0m \x1b[34m%s\x1b[0m \x1b[31m%s\x1b[0m',
-                '<■■■■■■■■',  // Red
+                '◄■■■■■■■■',  // Red
                 "~ "+u,        // Blue (username stored in variable `u`)
                 '' // Red
               );

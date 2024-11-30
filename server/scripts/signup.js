@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const express = require('express');
 
-const biodataFilePath = path.join(__dirname, 'biodata.json');
+const biodataFilePath = path.join(__dirname,"..",'data', 'biodata.json');
 
 // Function to handle user registration
 async function registerUser(newUser) {
@@ -36,7 +36,8 @@ async function registerUser(newUser) {
       u_n: newUser.u_n,
       key: newUser.key || '',
       theme: newUser.theme || '',
-      pass: newUser.pass || ''
+      pass: newUser.pass || '',
+      path:newUser.path || '',  
     };
 
     // Add the new user to the users array
@@ -55,10 +56,12 @@ async function registerUser(newUser) {
 // Function to attach the registration route to the app
 function setupRegistrationApi(app) {
   app.post('/register', async (req, res) => {
-    const { id_phn, u_n, key, theme, pass } = req.body;
+    const { id_phn, u_n, key, theme, pass, path } = req.body; // Include 'path'
+
+    console.log('▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲', { id_phn, u_n, theme }); // Debugging line
 
     try {
-      const result = await registerUser({ id_phn, u_n, key, theme, pass });
+      const result = await registerUser({ id_phn, u_n, key, theme, pass, path }); // Pass 'path'
       if (result.success) {
         res.status(201).json(result);
       } else {
@@ -70,5 +73,6 @@ function setupRegistrationApi(app) {
     }
   });
 }
+
 
 module.exports = setupRegistrationApi;
