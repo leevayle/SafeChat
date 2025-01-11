@@ -1,0 +1,54 @@
+{
+  "2024-12-02": {
+    "KzI1NDc0ODY3MzUzOA==": {
+      "KzI1NDc0ODY3MzUzOA==2024-12-02T05:58:12.160Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Hello there",
+        "timestamp": "2024-12-02T05:58:12.160Z",
+        "status": "1",
+        "statustime": "08:58 AM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-12-02T09:29:26.402Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Today is 2nd dec 2024,,,just started the day ithink",
+        "timestamp": "2024-12-02T09:29:26.402Z",
+        "status": "1",
+        "statustime": "12:29 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-12-02T09:32:17.361Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "I have set the textarea not to overflow with the text i'm tyoing and it seems to work. Im a proud guy right here.",
+        "timestamp": "2024-12-02T09:32:17.361Z",
+        "status": "1",
+        "statustime": "12:32 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-12-02T10:50:24.169Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "now it's 1:50 pm",
+        "timestamp": "2024-12-02T10:50:24.169Z",
+        "status": "1",
+        "statustime": "01:50 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-12-02T16:31:15.791Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Work day is now done, today i have done nothing to improve safechat.",
+        "timestamp": "2024-12-02T16:31:15.791Z",
+        "status": "1",
+        "statustime": "07:31 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-12-02T16:31:35.270Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Now let me go home and get myself something to eat cause i'm starving.",
+        "timestamp": "2024-12-02T16:31:35.270Z",
+        "status": "1",
+        "statustime": "07:31 PM"
+      }
+    }
+  }
+}

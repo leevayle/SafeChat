@@ -1520,6 +1520,702 @@
         "timestamp": "2024-11-30T15:40:47.744Z",
         "status": "1",
         "statustime": "06:40 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T15:48:46.421Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Hi there, looking good?",
+        "timestamp": "2024-11-30T15:48:46.421Z",
+        "status": "1",
+        "statustime": "06:48 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T15:50:58.024Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Yeah",
+        "timestamp": "2024-11-30T15:50:58.024Z",
+        "status": "1",
+        "statustime": "06:50 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T15:51:10.221Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "All is well",
+        "timestamp": "2024-11-30T15:51:10.221Z",
+        "status": "1",
+        "statustime": "06:51 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T15:54:06.090Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Now let's see what i can do with the UI",
+        "timestamp": "2024-11-30T15:54:06.090Z",
+        "status": "1",
+        "statustime": "06:54 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T15:54:33.917Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Ok",
+        "timestamp": "2024-11-30T15:54:33.917Z",
+        "status": "1",
+        "statustime": "06:54 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T15:58:34.531Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Underway",
+        "timestamp": "2024-11-30T15:58:34.531Z",
+        "status": "1",
+        "statustime": "06:58 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T16:03:48.186Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Check now",
+        "timestamp": "2024-11-30T16:03:48.186Z",
+        "status": "1",
+        "statustime": "07:03 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T16:05:25.999Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Now?",
+        "timestamp": "2024-11-30T16:05:25.999Z",
+        "status": "1",
+        "statustime": "07:05 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T16:14:15.430Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Hi there",
+        "timestamp": "2024-11-30T16:14:15.430Z",
+        "status": "1",
+        "statustime": "07:14 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T16:15:21.962Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Doesnt work man",
+        "timestamp": "2024-11-30T16:15:21.962Z",
+        "status": "1",
+        "statustime": "07:15 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T16:16:26.028Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "hi",
+        "timestamp": "2024-11-30T16:16:26.028Z",
+        "status": "1",
+        "statustime": "07:16 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T16:17:40.374Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Still bogus!!",
+        "timestamp": "2024-11-30T16:17:40.374Z",
+        "status": "1",
+        "statustime": "07:17 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T16:20:42.163Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Imagine i'm still in the office and this can't work...i literally spent my whole afternoon here working on this app. I think i accomplished afew things but most of the Frontend looks like nothing is actually going on, but mark you, i have done alot. Juat a vote of thanks for myself. I am good at this. I can do this I have done this. i am very proud of what i have accomplished today and i will always be proud of it. My app is now not as bogus as it was. I thank God for giving me a big brain and a nice laptop to code on. Thanks GOD!",
+        "timestamp": "2024-11-30T16:20:42.163Z",
+        "status": "1",
+        "statustime": "07:20 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T16:24:29.262Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Sure",
+        "timestamp": "2024-11-30T16:24:29.262Z",
+        "status": "1",
+        "statustime": "07:24 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T16:24:41.819Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Let me go to the house and get some sleep.",
+        "timestamp": "2024-11-30T16:24:41.819Z",
+        "status": "1",
+        "statustime": "07:24 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T16:30:48.877Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Look at this",
+        "timestamp": "2024-11-30T16:30:48.877Z",
+        "status": "1",
+        "statustime": "07:30 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:10:03.270Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Hi there",
+        "timestamp": "2024-11-30T17:10:03.270Z",
+        "status": "1",
+        "statustime": "08:10 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:10:09.531Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Doing good?",
+        "timestamp": "2024-11-30T17:10:09.531Z",
+        "status": "1",
+        "statustime": "08:10 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:10:14.711Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Why the quiet",
+        "timestamp": "2024-11-30T17:10:14.711Z",
+        "status": "1",
+        "statustime": "08:10 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:12:32.734Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Too quiet",
+        "timestamp": "2024-11-30T17:12:32.734Z",
+        "status": "1",
+        "statustime": "08:12 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:13:16.060Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Okay",
+        "timestamp": "2024-11-30T17:13:16.060Z",
+        "status": "1",
+        "statustime": "08:13 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:16:37.017Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Heey",
+        "timestamp": "2024-11-30T17:16:37.017Z",
+        "status": "1",
+        "statustime": "08:16 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:20:17.687Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Querryselector i dont know if it will work",
+        "timestamp": "2024-11-30T17:20:17.687Z",
+        "status": "1",
+        "statustime": "08:20 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:21:16.757Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "This is hillarious,,man it changed the whole div to active... :)",
+        "timestamp": "2024-11-30T17:21:16.757Z",
+        "status": "1",
+        "statustime": "08:21 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:22:17.712Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "I added another chat",
+        "timestamp": "2024-11-30T17:22:17.712Z",
+        "status": "1",
+        "statustime": "08:22 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:22:51.263Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "No worries i gat this",
+        "timestamp": "2024-11-30T17:22:51.263Z",
+        "status": "1",
+        "statustime": "08:22 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:23:58.062Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Let's find out",
+        "timestamp": "2024-11-30T17:23:58.062Z",
+        "status": "1",
+        "statustime": "08:23 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:24:33.146Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Actually i can't even receive the messages",
+        "timestamp": "2024-11-30T17:24:33.146Z",
+        "status": "1",
+        "statustime": "08:24 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:24:57.541Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Yeah in my dm that is",
+        "timestamp": "2024-11-30T17:24:57.541Z",
+        "status": "1",
+        "statustime": "08:24 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:25:48.765Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Now its back",
+        "timestamp": "2024-11-30T17:25:48.765Z",
+        "status": "1",
+        "statustime": "08:25 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:26:14.892Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Mine seems to have",
+        "timestamp": "2024-11-30T17:26:14.892Z",
+        "status": "1",
+        "statustime": "08:26 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:28:01.182Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Sure",
+        "timestamp": "2024-11-30T17:28:01.182Z",
+        "status": "1",
+        "statustime": "08:28 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:28:27.823Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Yeah i sure will",
+        "timestamp": "2024-11-30T17:28:27.823Z",
+        "status": "1",
+        "statustime": "08:28 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:31:28.220Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "tomorrow though",
+        "timestamp": "2024-11-30T17:31:28.220Z",
+        "status": "1",
+        "statustime": "08:31 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:31:40.339Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "right?",
+        "timestamp": "2024-11-30T17:31:40.339Z",
+        "status": "1",
+        "statustime": "08:31 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:36:17.670Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Now?",
+        "timestamp": "2024-11-30T17:36:17.671Z",
+        "status": "1",
+        "statustime": "08:36 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:36:40.763Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Mine doesn't",
+        "timestamp": "2024-11-30T17:36:40.763Z",
+        "status": "1",
+        "statustime": "08:36 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:37:05.334Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "I kind of don't knoow why]",
+        "timestamp": "2024-11-30T17:37:05.334Z",
+        "status": "1",
+        "statustime": "08:37 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:37:23.756Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Mine as well",
+        "timestamp": "2024-11-30T17:37:23.756Z",
+        "status": "1",
+        "statustime": "08:37 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:37:44.050Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Hello there",
+        "timestamp": "2024-11-30T17:37:44.050Z",
+        "status": "1",
+        "statustime": "08:37 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:37:58.778Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "working?",
+        "timestamp": "2024-11-30T17:37:58.778Z",
+        "status": "1",
+        "statustime": "08:37 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:38:15.636Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "first time only?",
+        "timestamp": "2024-11-30T17:38:15.636Z",
+        "status": "1",
+        "statustime": "08:38 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:38:35.972Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "No idea..but i'll fix it",
+        "timestamp": "2024-11-30T17:38:35.972Z",
+        "status": "1",
+        "statustime": "08:38 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:41:24.155Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Yes heey",
+        "timestamp": "2024-11-30T17:41:24.155Z",
+        "status": "1",
+        "statustime": "08:41 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:41:42.166Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "I see something i had disabled now i dont know what it is",
+        "timestamp": "2024-11-30T17:41:42.166Z",
+        "status": "1",
+        "statustime": "08:41 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:42:19.651Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Sure",
+        "timestamp": "2024-11-30T17:42:19.651Z",
+        "status": "1",
+        "statustime": "08:42 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:43:20.141Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "No i will",
+        "timestamp": "2024-11-30T17:43:20.141Z",
+        "status": "1",
+        "statustime": "08:43 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:45:08.644Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "I did something here, i hope i broke nothing",
+        "timestamp": "2024-11-30T17:45:08.644Z",
+        "status": "1",
+        "statustime": "08:45 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:45:42.873Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Me too over here it looks solid",
+        "timestamp": "2024-11-30T17:45:42.873Z",
+        "status": "1",
+        "statustime": "08:45 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:47:40.174Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Now i might have fixed everything alltogether",
+        "timestamp": "2024-11-30T17:47:40.174Z",
+        "status": "1",
+        "statustime": "08:47 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:48:21.470Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Nop i nroke things",
+        "timestamp": "2024-11-30T17:48:21.470Z",
+        "status": "1",
+        "statustime": "08:48 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:48:28.876Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Now let me fix them",
+        "timestamp": "2024-11-30T17:48:28.876Z",
+        "status": "1",
+        "statustime": "08:48 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:50:35.620Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Let's see last child element",
+        "timestamp": "2024-11-30T17:50:35.620Z",
+        "status": "1",
+        "statustime": "08:50 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:50:52.536Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Yeah",
+        "timestamp": "2024-11-30T17:50:52.536Z",
+        "status": "1",
+        "statustime": "08:50 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:51:09.712Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Sure",
+        "timestamp": "2024-11-30T17:51:09.712Z",
+        "status": "1",
+        "statustime": "08:51 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:51:54.998Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Now?",
+        "timestamp": "2024-11-30T17:51:54.998Z",
+        "status": "1",
+        "statustime": "08:51 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:52:11.892Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Boring",
+        "timestamp": "2024-11-30T17:52:11.892Z",
+        "status": "1",
+        "statustime": "08:52 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:52:55.645Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "i'm afraid si",
+        "timestamp": "2024-11-30T17:52:55.645Z",
+        "status": "1",
+        "statustime": "08:52 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:54:27.310Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Something new",
+        "timestamp": "2024-11-30T17:54:27.310Z",
+        "status": "1",
+        "statustime": "08:54 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:54:50.298Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "creating active after appending new child",
+        "timestamp": "2024-11-30T17:54:50.298Z",
+        "status": "1",
+        "statustime": "08:54 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:55:04.619Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "let me see",
+        "timestamp": "2024-11-30T17:55:04.619Z",
+        "status": "1",
+        "statustime": "08:55 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:55:09.501Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "No",
+        "timestamp": "2024-11-30T17:55:09.501Z",
+        "status": "1",
+        "statustime": "08:55 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:56:10.534Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "What",
+        "timestamp": "2024-11-30T17:56:10.534Z",
+        "status": "1",
+        "statustime": "08:56 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:56:39.290Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "I can get mine just fine",
+        "timestamp": "2024-11-30T17:56:39.290Z",
+        "status": "1",
+        "statustime": "08:56 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:56:57.642Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Cool",
+        "timestamp": "2024-11-30T17:56:57.642Z",
+        "status": "1",
+        "statustime": "08:56 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:58:39.324Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "They are many",
+        "timestamp": "2024-11-30T17:58:39.324Z",
+        "status": "1",
+        "statustime": "08:58 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:59:34.320Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "You see we have alot",
+        "timestamp": "2024-11-30T17:59:34.320Z",
+        "status": "1",
+        "statustime": "08:59 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T17:59:55.446Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Cool",
+        "timestamp": "2024-11-30T17:59:55.446Z",
+        "status": "1",
+        "statustime": "08:59 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:01:07.565Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Oops i was to send this from here",
+        "timestamp": "2024-11-30T18:01:07.565Z",
+        "status": "1",
+        "statustime": "09:01 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:01:15.882Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Yeah not the other chat",
+        "timestamp": "2024-11-30T18:01:15.882Z",
+        "status": "1",
+        "statustime": "09:01 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:01:45.983Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Something happened on the other sie right?",
+        "timestamp": "2024-11-30T18:01:45.983Z",
+        "status": "1",
+        "statustime": "09:01 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:02:21.742Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Looking really bad",
+        "timestamp": "2024-11-30T18:02:21.742Z",
+        "status": "1",
+        "statustime": "09:02 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:02:41.234Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Check Again",
+        "timestamp": "2024-11-30T18:02:41.234Z",
+        "status": "1",
+        "statustime": "09:02 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:02:56.485Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Cool",
+        "timestamp": "2024-11-30T18:02:56.485Z",
+        "status": "1",
+        "statustime": "09:02 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:03:02.106Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Good night.",
+        "timestamp": "2024-11-30T18:03:02.106Z",
+        "status": "1",
+        "statustime": "09:03 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:03:37.852Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Nothing just goodnight",
+        "timestamp": "2024-11-30T18:03:37.852Z",
+        "status": "1",
+        "statustime": "09:03 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:06:39.239Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Or is it?",
+        "timestamp": "2024-11-30T18:06:39.239Z",
+        "status": "1",
+        "statustime": "09:06 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:08:16.743Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "I think i have a solve",
+        "timestamp": "2024-11-30T18:08:16.743Z",
+        "status": "1",
+        "statustime": "09:08 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:08:39.982Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "I think noe",
+        "timestamp": "2024-11-30T18:08:39.982Z",
+        "status": "1",
+        "statustime": "09:08 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:08:43.395Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Not",
+        "timestamp": "2024-11-30T18:08:43.395Z",
+        "status": "1",
+        "statustime": "09:08 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:10:44.607Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Now?",
+        "timestamp": "2024-11-30T18:10:44.608Z",
+        "status": "1",
+        "statustime": "09:10 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:11:04.649Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Nothing",
+        "timestamp": "2024-11-30T18:11:04.649Z",
+        "status": "1",
+        "statustime": "09:11 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:11:23.547Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "I think i can make it well",
+        "timestamp": "2024-11-30T18:11:23.547Z",
+        "status": "1",
+        "statustime": "09:11 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:11:41.802Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Okay goodnight",
+        "timestamp": "2024-11-30T18:11:41.802Z",
+        "status": "1",
+        "statustime": "09:11 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:12:20.013Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "what happened",
+        "timestamp": "2024-11-30T18:12:20.013Z",
+        "status": "1",
+        "statustime": "09:12 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:12:39.655Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "where",
+        "timestamp": "2024-11-30T18:12:39.655Z",
+        "status": "1",
+        "statustime": "09:12 PM"
+      },
+      "KzI1NDc0ODY3MzUzOA==2024-11-30T18:12:54.153Z": {
+        "to": "KzI1NDcwNjQ2MzE4OQ==",
+        "from": "KzI1NDc0ODY3MzUzOA==",
+        "message": "Okay",
+        "timestamp": "2024-11-30T18:12:54.153Z",
+        "status": "1",
+        "statustime": "09:12 PM"
       }
     },
     "KzI1NDcwNjAwMDE4OQ==": {
@@ -2990,6 +3686,638 @@
         "timestamp": "2024-11-30T15:40:53.863Z",
         "status": "1",
         "statustime": "06:40 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T15:46:32.840Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Hi",
+        "timestamp": "2024-11-30T15:46:32.840Z",
+        "status": "1",
+        "statustime": "06:46 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T15:48:58.924Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Yeah, hope all is well",
+        "timestamp": "2024-11-30T15:48:58.924Z",
+        "status": "1",
+        "statustime": "06:48 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T15:53:51.364Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Cool",
+        "timestamp": "2024-11-30T15:53:51.364Z",
+        "status": "1",
+        "statustime": "06:53 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T15:54:21.632Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Okay, looking foreward to it",
+        "timestamp": "2024-11-30T15:54:21.632Z",
+        "status": "1",
+        "statustime": "06:54 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T16:12:37.953Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Hi",
+        "timestamp": "2024-11-30T16:12:37.953Z",
+        "status": "1",
+        "statustime": "07:12 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T16:13:49.115Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Doing good?",
+        "timestamp": "2024-11-30T16:13:49.116Z",
+        "status": "1",
+        "statustime": "07:13 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T16:13:57.619Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Hi",
+        "timestamp": "2024-11-30T16:13:57.619Z",
+        "status": "1",
+        "statustime": "07:13 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T16:14:59.013Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Yeah",
+        "timestamp": "2024-11-30T16:14:59.013Z",
+        "status": "1",
+        "statustime": "07:14 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T16:15:30.853Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Oh..sounds bad",
+        "timestamp": "2024-11-30T16:15:30.853Z",
+        "status": "1",
+        "statustime": "07:15 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T16:17:22.806Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Now?",
+        "timestamp": "2024-11-30T16:17:22.806Z",
+        "status": "1",
+        "statustime": "07:17 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T16:17:51.346Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Oops too bad",
+        "timestamp": "2024-11-30T16:17:51.346Z",
+        "status": "1",
+        "statustime": "07:17 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T16:23:39.341Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "yOU DESERVE IT!",
+        "timestamp": "2024-11-30T16:23:39.341Z",
+        "status": "1",
+        "statustime": "07:23 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T16:23:46.115Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "You deserve it.",
+        "timestamp": "2024-11-30T16:23:46.115Z",
+        "status": "1",
+        "statustime": "07:23 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:12:16.125Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Hello",
+        "timestamp": "2024-11-30T17:12:16.125Z",
+        "status": "1",
+        "statustime": "08:12 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:13:01.773Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "No i was offline",
+        "timestamp": "2024-11-30T17:13:01.773Z",
+        "status": "1",
+        "statustime": "08:13 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:16:26.701Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Hey miamorr",
+        "timestamp": "2024-11-30T17:16:26.701Z",
+        "status": "1",
+        "statustime": "08:16 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:16:58.376Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Doing okay?",
+        "timestamp": "2024-11-30T17:16:58.376Z",
+        "status": "1",
+        "statustime": "08:16 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:20:29.296Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "I think it will",
+        "timestamp": "2024-11-30T17:20:29.296Z",
+        "status": "1",
+        "statustime": "08:20 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:21:40.027Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Too bad",
+        "timestamp": "2024-11-30T17:21:40.027Z",
+        "status": "1",
+        "statustime": "08:21 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:21:56.161Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "But now what happened it was working just fine",
+        "timestamp": "2024-11-30T17:21:56.161Z",
+        "status": "1",
+        "statustime": "08:21 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:22:35.872Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "My bad i didn't know",
+        "timestamp": "2024-11-30T17:22:35.872Z",
+        "status": "1",
+        "statustime": "08:22 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:23:11.216Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Oh man i see it now",
+        "timestamp": "2024-11-30T17:23:11.216Z",
+        "status": "1",
+        "statustime": "08:23 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:23:48.038Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Will ...All work?",
+        "timestamp": "2024-11-30T17:23:48.038Z",
+        "status": "1",
+        "statustime": "08:23 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:24:09.056Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "No it doesn't",
+        "timestamp": "2024-11-30T17:24:09.056Z",
+        "status": "1",
+        "statustime": "08:24 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:24:48.776Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "You mean",
+        "timestamp": "2024-11-30T17:24:48.776Z",
+        "status": "1",
+        "statustime": "08:24 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:25:38.385Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Lets see now",
+        "timestamp": "2024-11-30T17:25:38.385Z",
+        "status": "1",
+        "statustime": "08:25 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:26:04.421Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Mine has no color though",
+        "timestamp": "2024-11-30T17:26:04.421Z",
+        "status": "1",
+        "statustime": "08:26 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:26:43.840Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "I think this needs to be the first div not last",
+        "timestamp": "2024-11-30T17:26:43.840Z",
+        "status": "1",
+        "statustime": "08:26 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:28:19.180Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Work on it",
+        "timestamp": "2024-11-30T17:28:19.180Z",
+        "status": "1",
+        "statustime": "08:28 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:36:27.459Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Looks like it works",
+        "timestamp": "2024-11-30T17:36:27.459Z",
+        "status": "1",
+        "statustime": "08:36 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:36:48.210Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "well mine does",
+        "timestamp": "2024-11-30T17:36:48.210Z",
+        "status": "1",
+        "statustime": "08:36 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:37:15.163Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Now it doesn't",
+        "timestamp": "2024-11-30T17:37:15.163Z",
+        "status": "1",
+        "statustime": "08:37 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:37:34.961Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Hello",
+        "timestamp": "2024-11-30T17:37:34.961Z",
+        "status": "1",
+        "statustime": "08:37 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:38:06.345Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Yeah, but",
+        "timestamp": "2024-11-30T17:38:06.345Z",
+        "status": "1",
+        "statustime": "08:38 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:38:25.204Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Yeah. any idea why?",
+        "timestamp": "2024-11-30T17:38:25.204Z",
+        "status": "1",
+        "statustime": "08:38 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:38:42.148Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Okay",
+        "timestamp": "2024-11-30T17:38:42.148Z",
+        "status": "1",
+        "statustime": "08:38 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:41:17.725Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "hey",
+        "timestamp": "2024-11-30T17:41:17.725Z",
+        "status": "1",
+        "statustime": "08:41 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:42:08.209Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Well i most definately dont know if you dont",
+        "timestamp": "2024-11-30T17:42:08.209Z",
+        "status": "1",
+        "statustime": "08:42 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:42:31.691Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "But i'll figure it out",
+        "timestamp": "2024-11-30T17:42:31.691Z",
+        "status": "1",
+        "statustime": "08:42 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:43:31.927Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Okay :/",
+        "timestamp": "2024-11-30T17:43:31.927Z",
+        "status": "1",
+        "statustime": "08:43 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:45:27.669Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Mine looks good",
+        "timestamp": "2024-11-30T17:45:27.669Z",
+        "status": "1",
+        "statustime": "08:45 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:45:50.970Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Cool",
+        "timestamp": "2024-11-30T17:45:50.970Z",
+        "status": "1",
+        "statustime": "08:45 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:47:50.475Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Lets see",
+        "timestamp": "2024-11-30T17:47:50.475Z",
+        "status": "1",
+        "statustime": "08:47 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:48:04.304Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Looks good",
+        "timestamp": "2024-11-30T17:48:04.304Z",
+        "status": "1",
+        "statustime": "08:48 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:48:11.529Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Huh",
+        "timestamp": "2024-11-30T17:48:11.529Z",
+        "status": "1",
+        "statustime": "08:48 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:50:47.607Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Looks like its just the same",
+        "timestamp": "2024-11-30T17:50:47.607Z",
+        "status": "1",
+        "statustime": "08:50 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:51:02.165Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "No difference",
+        "timestamp": "2024-11-30T17:51:02.165Z",
+        "status": "1",
+        "statustime": "08:51 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:52:04.266Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Still the usual",
+        "timestamp": "2024-11-30T17:52:04.266Z",
+        "status": "1",
+        "statustime": "08:52 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:52:19.989Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Mmhh",
+        "timestamp": "2024-11-30T17:52:19.989Z",
+        "status": "1",
+        "statustime": "08:52 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:52:36.822Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "still the usual?",
+        "timestamp": "2024-11-30T17:52:36.822Z",
+        "status": "1",
+        "statustime": "08:52 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:53:08.169Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "make things new",
+        "timestamp": "2024-11-30T17:53:08.169Z",
+        "status": "1",
+        "statustime": "08:53 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:53:12.720Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "once for all",
+        "timestamp": "2024-11-30T17:53:12.720Z",
+        "status": "1",
+        "statustime": "08:53 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:54:32.235Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "what",
+        "timestamp": "2024-11-30T17:54:32.235Z",
+        "status": "1",
+        "statustime": "08:54 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:54:58.507Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Does it work",
+        "timestamp": "2024-11-30T17:54:58.507Z",
+        "status": "1",
+        "statustime": "08:54 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:55:15.470Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Oops",
+        "timestamp": "2024-11-30T17:55:15.470Z",
+        "status": "1",
+        "statustime": "08:55 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:56:05.255Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Mmmh",
+        "timestamp": "2024-11-30T17:56:05.255Z",
+        "status": "1",
+        "statustime": "08:56 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:56:28.753Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Can't receive new texts now",
+        "timestamp": "2024-11-30T17:56:28.753Z",
+        "status": "1",
+        "statustime": "08:56 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:56:50.404Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "I can get mine now",
+        "timestamp": "2024-11-30T17:56:50.404Z",
+        "status": "1",
+        "statustime": "08:56 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:57:02.528Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Oka",
+        "timestamp": "2024-11-30T17:57:02.528Z",
+        "status": "1",
+        "statustime": "08:57 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:57:09.256Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Okay",
+        "timestamp": "2024-11-30T17:57:09.256Z",
+        "status": "1",
+        "statustime": "08:57 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:57:50.583Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Accomplishments?",
+        "timestamp": "2024-11-30T17:57:50.583Z",
+        "status": "1",
+        "statustime": "08:57 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:58:45.976Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Like?",
+        "timestamp": "2024-11-30T17:58:45.976Z",
+        "status": "1",
+        "statustime": "08:58 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T17:59:48.462Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "I will come for the list tomorrow",
+        "timestamp": "2024-11-30T17:59:48.462Z",
+        "status": "1",
+        "statustime": "08:59 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:00:50.647Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Sure, now that i have developed most part of the UI things are gonna be looking good",
+        "timestamp": "2024-11-30T18:00:50.647Z",
+        "status": "1",
+        "statustime": "09:00 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:01:21.409Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Sure",
+        "timestamp": "2024-11-30T18:01:21.409Z",
+        "status": "1",
+        "statustime": "09:01 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:02:07.126Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "I think the first dummmy lost the count text",
+        "timestamp": "2024-11-30T18:02:07.126Z",
+        "status": "1",
+        "statustime": "09:02 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:02:50.206Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Now we're good",
+        "timestamp": "2024-11-30T18:02:50.206Z",
+        "status": "1",
+        "statustime": "09:02 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:03:12.738Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Goodnight too",
+        "timestamp": "2024-11-30T18:03:12.738Z",
+        "status": "1",
+        "statustime": "09:03 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:03:25.670Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "or what",
+        "timestamp": "2024-11-30T18:03:25.670Z",
+        "status": "1",
+        "statustime": "09:03 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:06:31.304Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "good night is in order",
+        "timestamp": "2024-11-30T18:06:31.304Z",
+        "status": "1",
+        "statustime": "09:06 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:06:48.980Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Yeah it is",
+        "timestamp": "2024-11-30T18:06:48.980Z",
+        "status": "1",
+        "statustime": "09:06 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:08:24.563Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Where?",
+        "timestamp": "2024-11-30T18:08:24.563Z",
+        "status": "1",
+        "statustime": "09:08 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:08:54.964Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Whoaaa definately not",
+        "timestamp": "2024-11-30T18:08:54.964Z",
+        "status": "1",
+        "statustime": "09:08 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:10:56.609Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Let's see",
+        "timestamp": "2024-11-30T18:10:56.609Z",
+        "status": "1",
+        "statustime": "09:10 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:11:11.141Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Just the count",
+        "timestamp": "2024-11-30T18:11:11.141Z",
+        "status": "1",
+        "statustime": "09:11 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:11:34.402Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "I think you need some sleep",
+        "timestamp": "2024-11-30T18:11:34.402Z",
+        "status": "1",
+        "statustime": "09:11 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:11:48.054Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "Goodnight too",
+        "timestamp": "2024-11-30T18:11:48.054Z",
+        "status": "1",
+        "statustime": "09:11 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:12:32.106Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "what",
+        "timestamp": "2024-11-30T18:12:32.106Z",
+        "status": "1",
+        "statustime": "09:12 PM"
+      },
+      "KzI1NDcwNjQ2MzE4OQ==2024-11-30T18:12:48.111Z": {
+        "to": "KzI1NDc0ODY3MzUzOA==",
+        "from": "KzI1NDcwNjQ2MzE4OQ==",
+        "message": "I see we're fine now",
+        "timestamp": "2024-11-30T18:12:48.111Z",
+        "status": "1",
+        "statustime": "09:12 PM"
       }
     }
   }
