@@ -1,0 +1,61 @@
+@media screen and (min-width:1900px){
+    .chats{
+        max-width: 500px;
+    }
+    .messages{max-width: 800px;}
+    .other{flex-grow: 1;}
+}
+
+
+@media screen and (max-width:1000px){
+    .other{
+        display: none;
+    }
+    .messages{
+        flex-grow: 1;
+    }
+    .chats{
+        min-width: 200px;
+        width: 50%;
+    }
+}
+
+
+
+@media screen and (max-width:700px) and (max-height:900px){
+    .messages{
+        display: flex;
+    }
+    .chats{
+        min-width: 200px;
+        width: 50%;
+    }
+    .messages{
+        
+        width: 50%;
+    }
+    .message-form{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:650px){
+    .messages{
+        display: none;
+    }
+    .chats{
+        margin: auto;
+        min-width: 200px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:450px){
+
+    .chats{
+        min-width: 200px;
+        width: 100%;
+    }
+    .filters{
+        height: 40px;
+    }}

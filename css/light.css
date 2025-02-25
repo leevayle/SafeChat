@@ -63,6 +63,27 @@ body, html{
 
 
 
+.nmback{
+    background-color: rgba(0, 0, 0, 0.748);
+    
+}
+.newmessage{
+    background-color: var(--bg);
+}
+.nmtitle{
+    background-color: var(--body);
+}
+.newmessageinput{
+    border: 1px solid var(--border1);
+    color: var(--input-font);
+}
+.nmbtn{
+    background-color: var(--accent2);
+    color: var(--white);
+}
+
+
+
 .search-section{
     border: 1px solid var(--border1);
 }
@@ -142,6 +163,17 @@ body, html{
     fill: var(--accent3);
     transition: all 0.1s ease;
 }
+.m-top-svg{
+    stroke: var(--accent3);
+}
+.top-msg-action{        
+    background-color: var(--bg2);
+}
+
+.top-msg-action:hover .m-top-svg{
+    stroke: var(--accent2);
+    transition: all 0.2s ease-in-out;
+}
 /* .top-icon:hover .top-svg{
     fill: var(--accent2);
 } */
@@ -156,6 +188,28 @@ body, html{
  .message-top{
     box-shadow: var(--body) 0px 5px 25px;
  }
+ .status2{
+    background-color: var(--status-ok);
+    border: 2px solid var(--bg);
+ }
+ .name{
+    color: var(--text-name);
+ }
+ .last-seen{
+    color: var(--text-time);
+ }
+
+ .message-top-mid{
+    background-color: var(--bg2);
+ }
+ .call-video-mid{
+    border-left: 1px solid var(--border2);
+ }
+ .calls:hover, .video-calls:hover{
+    background-color: var(--bg);
+ }
+
+
  .message-cont::-webkit-scrollbar-thumb {
     background-color: var(--border1);
   }
@@ -196,7 +250,7 @@ body, html{
 .message-form{
     border: 1px solid var(--border1);
 }
-.message-input input{color: var(--text-time);}
+.message-input textarea{color: var(--text-time);}
 
 .message-send{
     background-color: var(--accent3);

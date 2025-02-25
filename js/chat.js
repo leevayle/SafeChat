@@ -4,6 +4,8 @@ let ws; // Declare WebSocket variable
 let reconnectAttempts = 0;
 const maxReconnectAttempts = 5;
 
+
+
 // Function to connect to WebSocket server
 function connectWebSocket() {
     if (isConnected) return; // Don't connect if already connected
@@ -25,52 +27,142 @@ function connectWebSocket() {
 
     // Handle WebSocket messages from the server
     ws.onmessage = (message) => {
-        const parentDiv = document.querySelector('.full-text'); // Parent div for appending
-    
+        const parentDiv = document.querySelector('.message-cont'); // Target the container
         try {
             if (message) {
-                const messageData = JSON.parse(message.data); // Parse the message data
+                const messageData = JSON.parse(message.data);
+                // console.log(messageData.statustime);
     
-                // Format the current time without seconds/milliseconds
-                const currentTime = new Date().toLocaleTimeString([], {
+                // Get the 'from' field from the received message and local storage 'idPhn'
+                const fromId = messageData.from;
+                const localIdPhn = localStorage.getItem('id_phn');
+    
+                // If the message is from the current user, do not append it
+                if (fromId === localIdPhn) {
+                    // console.log("Skipped appending own message.");
+                    return;
+                }
+    
+                const decodedMessage = messageData.message;
+                const timestamp = new Date(messageData.timestamp).toLocaleTimeString([], {
                     hour: '2-digit',
                     minute: '2-digit',
                     hour12: true,
                 });
+                // console.log(messageData.profilepath)
+                
+
+                //Create HTML for client chats
+                const messagechatparentDIV = document.querySelector('.history');
+                const messagechathtml = `
+                <div id="${messageData.from}" class="text">
+                    <div class="t-profile ">
+                        <div class="person">
+                            <img id="user-profile-url" src="${messageData.profilepath}">
+                            
+                        </div>
+                        <div id="online-status" class="offline-status">
+
+                        </div>
+                    </div>
+                    <div class="t-text ">
+                        <div id="user-name" class="t-name ">
+                            ${atob(messageData.from)}
+                        </div>
+                        <div id="user-message" class="t-message " title="${messageData.message}">
+                            ${messageData.message}
+                        </div>
+                    </div>
+                    <div class="t-time ">
+                        <div id="user-message-time" class="t-time1 ">
+                            ${messageData.statustime}
+                        </div>
+                        <div id="user-message-count" class="t-notification t-active">
+                            1
+                        </div>
+                    </div>
+                </div>
+                
+                `
     
-                // Define the entire div structure as a template string
-                const messageHtml = `
+                // Create the HTML for client inbox
+                const receivedMessageHtml = `
                     <div class="text-ab">
                         <div class="texts aa">
                             <div id="text-aa" class="text-message">
-                                ${messageData.message}
+                                ${decodedMessage}
                             </div>
                         </div>
                         <div class="text-reports">
                             <div class="read-reports sent received">
-                                √√
+                                <!-- √√ --> 
                             </div>
                             <div class="text-time sent">
-                                ${currentTime}
+                                ${timestamp}
                             </div>
                         </div>
                     </div>
-                    <div class="full-text"></div>
                 `;
     
-                // Create a temporary container to convert the HTML string to DOM elements
-                const tempDiv = document.createElement('div');
-                tempDiv.innerHTML = messageHtml;
+                const fullTextHtml = `<div class="full-text"></div>`;
     
-                // Append the new message to the end of the parent div
-                parentDiv.appendChild(tempDiv.firstElementChild);
+                // Create temporary divs for appending
+                const receivedMessageDiv = document.createElement('div');
+                receivedMessageDiv.innerHTML = receivedMessageHtml;
     
-                console.log('Message received:', messageData.message);
+                const fullTextDiv = document.createElement('div');
+                fullTextDiv.innerHTML = fullTextHtml;
+
+                // const messagechatDIV = document.createElement('div');
+                // messagechatDIV.innerHTML = messagechathtml;
+
+                // now i want to append only if the div doesn't already exist, if it does, just update the text
+                // Check if an element with the same ID already exists
+            const existingChatDiv = document.getElementById(messageData.from);
+
+            if (existingChatDiv) {
+                // Update the existing chat div
+                const messageTextDiv = existingChatDiv.querySelector('#user-message');
+                const messageTimeDiv = existingChatDiv.querySelector('#user-message-time');
+                const messageCountDiv = existingChatDiv.querySelector('#user-message-count');
+                const profileImage = existingChatDiv.querySelector('#user-profile-url');
+
+                if (messageTextDiv) messageTextDiv.textContent = messageData.message;
+                if (messageTimeDiv) messageTimeDiv.textContent = messageData.statustime;
+
+                // Update message count
+                if (messageCountDiv) {
+                    let currentCount = parseInt(messageCountDiv.textContent, 10);
+                    messageCountDiv.textContent = isNaN(currentCount) ? 1 : currentCount + 1;
+                }
+                            // Update profile image if it has changed
+                if (profileImage && profileImage.src !== messageData.profilepath) {
+                    profileImage.src = messageData.profilepath;
+                }
+
+                // Update counter div to active
+                const messageCount = document.getElementById('user-message-count');
+                if (messageCount) {
+                    messageCount.classList.add('t-active');
+                }
+            } else {
+                // Create a new chat div and append it if it doesn't exist
+                const messagechatDIV = document.createElement('div');
+                messagechatDIV.innerHTML = messagechathtml;
+                messagechatparentDIV.appendChild(messagechatDIV.firstElementChild);
+            }
+
+    
+                // Append the received message only if it's not from the current user
+                // messagechatparentDIV.appendChild(messagechatDIV.firstElementChild);
+                parentDiv.appendChild(receivedMessageDiv.firstElementChild);
+                parentDiv.appendChild(fullTextDiv.firstElementChild);
             }
         } catch (err) {
-            console.error('Error handling message:', err);
+            console.error('Error processing received message:', err);
         }
     };
+    
     
 
     // Handle WebSocket connection error
@@ -104,39 +196,205 @@ window.addEventListener('beforeunload', () => {
     }
 });
 
-// Send message to WebSocket server when button is clicked
+// Send message to server
 document.getElementById('send').addEventListener('click', () => {
     const message = document.getElementById('msg').value;
 
-    // check connection
+    // Check connection
     if (!isConnected) {
-        alert("Not connected to the server yet!");
+        alert("You're not connected to the SafeChat server!");
         return;
     }
 
-    // Get data from localStorage
+    // Get info
     const idPhn = localStorage.getItem('id_phn') || 'unknown';
+    const profilepath = (`../images/profiles/${idPhn}.jpg`);
     const uN = localStorage.getItem('u_n') || '';
-    const timestamp = new Date().toISOString(); // Get the current timestamp in ISO format
+    const timestamp = new Date().toLocaleTimeString([], {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true,
+    });
+
+    // change to-number when user clicks the chat
+    let tophones = atob(localStorage.getItem('to'));
+    // console.log(tophones);
+    const from = atob(localStorage.getItem('id_phn'));
+
+    // if(from) {
+    //     if(from === "+254748673538") {
+    //         tophones = "+254706463189";
+    //         console.log('changed to 06');
+    //     } else if(from === "+254706463189") {
+    //         tophones = "+254748673538";
+    //         console.log('changed to 48');
+    //     }else{
+    //         tophones = '+254700000000';
+    //     }
+    // }
+
+
+
+
+
 
     if (message) {
-        
         const messageData = {
-            to: btoa('+254748673538'),
-            from: idPhn,  
-            u_n: uN,      
-            timestamp: timestamp,  
-            message: btoa(message), 
+            messageid: idPhn + new Date().toISOString(),
+            to: btoa(tophones),
+            from: idPhn,
+            u_n: uN,
+            timestamp: new Date().toISOString(),
+            message: btoa(message),
+            path: profilepath,
+            status: '1',
+            statustime: timestamp
         };
 
-        
+
+
+
+
+        // Send action
         ws.send(JSON.stringify(messageData));
-        console.log("You: " + message);
+
+        // Append the sent message to the DOM
+        const parentDiv = document.querySelector('.message-cont'); // parent for the message
+
+        // Sent message HTML
+        const sentMessageHtml = `
+            <div class="text-ab" style="margin-left: auto;">
+                <div class="texts bb">
+                    <div id="text-bb" class="text-message">
+                        ${message}
+                    </div>
+                </div>
+                <div class="text-reports" style="margin-left: auto;">
+                    <div class="read-reports sent">
+                        √√
+                    </div>
+                    <div class="text-time sent">
+                        ${timestamp}
+                    </div>
+                </div>
+            </div>
+        `;
+
+        const fullTextHtml = `<div class="full-text"></div>`;
+
+        // Create temporary divs for the message
+        const sentMessageDiv = document.createElement('div');
+        sentMessageDiv.innerHTML = sentMessageHtml;
+
+        const fullTextDiv = document.createElement('div');
+        fullTextDiv.innerHTML = fullTextHtml;
 
         
-        document.getElementById('msg').value = '';
-    } else {
 
-        // i prefer no to do anything, i handle that with a different script
+        // Append the sent message and full-text divs
+        parentDiv.appendChild(sentMessageDiv.firstElementChild);
+        parentDiv.appendChild(fullTextDiv.firstElementChild);
+
+        // Check if a div for the recipient already exists
+        const existingChatDiv = document.getElementById(messageData.to);
+        
+        if (existingChatDiv) {
+            // Update the existing div for the recipient
+            const messageTextDiv = existingChatDiv.querySelector('#user-message');
+            const messageTimeDiv = existingChatDiv.querySelector('#user-message-time');
+            const messageCountDiv = existingChatDiv.querySelector('#user-message-count');
+            // const profileImage = existingChatDiv.querySelector('#user-profile-url');
+
+            if (messageTextDiv) messageTextDiv.textContent = atob(messageData.message);
+            if (messageTimeDiv) messageTimeDiv.textContent = messageData.statustime;
+
+            // // Update message count
+            // if (messageCountDiv) {
+            //     let currentCount = parseInt(messageCountDiv.textContent, 10);
+            //     messageCountDiv.textContent = isNaN(currentCount) ? 1 : currentCount + 1;
+            // }
+
+            // Update profile image if it has changed
+            // if (profileImage && profileImage.src !== messageData.profilepath) {
+            //     profileImage.src = messageData.profilepath;
+            // }
+
+           
+            // const messageCount = document.getElementById('user-message-count');
+            // if (messageCount) {
+            //     messageCount.classList.remove('t-active');
+            //     messageCount.textContent = '';
+            // }
+
+        } else {
+            // Create and append a new chat div for the recipient if it doesn't exist
+            const messageChatParentDiv = document.querySelector('.history');
+            const messageChatHtml = `
+                <div id="${messageData.to}" class="text">
+                    <div class="t-profile ">
+                        <div class="person">
+                            <img id="user-profile-url" src="${messageData.profilepath}">
+                        </div>
+                        <div id="online-status" class="offline-status"></div>
+                    </div>
+                    <div class="t-text ">
+                        <div id="user-name" class="t-name ">
+                            ${atob(messageData.to)}
+                        </div>
+                        <div id="user-message" class="t-message " title="${atob(messageData.message)}">
+                            ${atob(messageData.message)}
+                        </div>
+                    </div>
+                    <div class="t-time ">
+                        <div id="user-message-time" class="t-time1 ">
+                            ${messageData.statustime}
+                        </div>
+                        <div id="user-message-count" class="t-notification ">
+                            
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            const messageChatDiv = document.createElement('div');
+            messageChatDiv.innerHTML = messageChatHtml;
+            
+            messageChatParentDiv.appendChild(messageChatDiv.firstElementChild);
+            
+        }
+
+        // Clear the input field after sending
+        document.getElementById('msg').value = '';
+        document.getElementById('msg').focus();
     }
+    document.getElementById('msg').value = '';
+    document.getElementById('msg').focus();
 });
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const parentContainer = document.querySelector('.history'); // Adjust as needed
+
+    parentContainer.addEventListener('click', (event) => {
+        const clickedElement = event.target.closest('.text'); // Check if click is within a `.text` element
+
+        if (clickedElement) {
+            const activeNotification = clickedElement.querySelector('.t-notification');
+            if (activeNotification) {
+                activeNotification.classList.remove('t-active');
+                activeNotification.innerText = ''; // Clear any notification text if needed
+            }
+        }
+    });
+});
+
+
+
+
+
